@@ -1,0 +1,7 @@
+package AreaCalc;
+
+public class AreaCalc {
+	public enum Shape {
+		
+	}
+}

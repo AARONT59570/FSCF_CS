@@ -1,0 +1,37 @@
+package AreaCalc;
+
+public class AreaCalc {
+	private Shape curShape;
+	public enum Shape {
+		TRIANGLE, SQUARE, CIRCLE
+	}
+	public void MakeShape(String shapeName) {
+		switch(shapeName.toLowerCase()) {
+		case "triangle" :
+			curShape = Shape.TRIANGLE;
+			break;
+		case "circle" :
+			curShape = Shape.CIRCLE;
+			break;
+		case "square" :
+			curShape = Shape.SQUARE;
+			break;
+		default :
+			System.out.println("Invalid Shape");
+		}
+	}
+	public double GetArea(float[] dim) {
+		switch(curShape) {
+		case TRIANGLE :
+			return (dim[0] * dim[1]) / 2f;
+		case CIRCLE :
+			return (Math.pow(dim[0], 2) * Math.PI);
+		case SQUARE :
+			return (dim[0] * dim[1]);
+		default :
+			return 0;
+		}
+	}
+	
+
+}

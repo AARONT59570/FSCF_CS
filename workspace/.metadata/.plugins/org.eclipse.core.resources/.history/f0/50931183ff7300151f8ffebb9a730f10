@@ -1,0 +1,8 @@
+package AreaCalc;
+
+public class AreaCalcController {
+	public static void main(String[] args) {
+		
+		
+	}
+}
