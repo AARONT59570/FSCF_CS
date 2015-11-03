@@ -11,7 +11,6 @@ public class AgeProgram {
 			System.out.print("What is your age?: ");
 			age = Integer.parseInt(input.next());
 			if (age == 999) {
-				System.out.println("Rogue Value !!!");
 				break;
 			}
 			System.out.println(String.format("Congratulations on being %1$d!", age));
