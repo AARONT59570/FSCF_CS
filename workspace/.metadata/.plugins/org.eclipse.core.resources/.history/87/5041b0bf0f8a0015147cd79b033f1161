@@ -1,0 +1,15 @@
+package binarySearch;
+
+public class BinarySearch {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+	}
+	public static boolean binarySearch(int[] array, int value) {
+		int low = 0;
+		int high = array.length - 1;
+	}
+
+}
