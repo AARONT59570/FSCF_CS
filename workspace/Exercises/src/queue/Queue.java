@@ -24,8 +24,7 @@ public class Queue {
 	
 		 rear = -1 ; // nothing there yet, you could set it to zero but it can 
 	
-		 nItems=0; // nothing in the queue yet
-
+		 nItems=0;
 	 }
 
 	 //-------------------------------------------------------------------
