@@ -1,0 +1,22 @@
+package fibonacciNums;
+import java.util.Scanner;
+public class FibonacciProgram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		System.out.print("How many fibonacci numbers?: ");
+		int n = input.nextInt();
+		int[] fNums = new int[n+1];
+		for (int i = 2; i <= n; i++) {
+			if (i == 2) {
+				fNums[0] = 0;
+				fNums[1] = 1;
+				System.out.print("0 1");
+			}
+			fNums[i] = fNums[i-1] + fNums[i-2];
+			System.out.print(" "+ fNums[i]);
+		}
+	}
+
+}

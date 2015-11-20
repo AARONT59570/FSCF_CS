@@ -1,0 +1,19 @@
+package primeCheck;
+import java.util.Scanner;
+
+public class PrimeCheckProgram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter a number: ");
+		int num = Integer.parseInt(input.next());
+		int[] factors = new int[num];
+		int curFactors;
+		for (int i = 1; i <= num; i++) {
+			if (num%i == 0)
+				factors[curFactors]
+		}
+	}
+
+}
