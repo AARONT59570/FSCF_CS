@@ -1,0 +1,10 @@
+package collectionsFramework;
+import java.util.*;
+
+public class LinkedListSort {
+	private LinkedList list;
+	private  int values;
+	
+	public void Collections
+
+}

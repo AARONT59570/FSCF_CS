@@ -7,7 +7,8 @@
 <fullyQualifiedTypeName name="as.java.lessons.calculator.Calculator"/>
 <fullyQualifiedTypeName name="AreaCalc.AreaCalc.Shape"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="java.util.function.LongToIntFunction"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
 </qualifiedTypeNameHistroy>
