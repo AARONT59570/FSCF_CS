@@ -14,15 +14,12 @@ public class Queue {
 
 	 //-------------------------------------------------------------------
 
-	 public Queue(int s){ //constructor init blud!
+	 public Queue(int s){
 
-		 maxSize=s;//set the maximum size of the array
-	
-		 queueArray=new long[maxSize];//instantiate the array
-	
-		 front=0; // array indexes always start from zero- we KNOW this by now!
-	
-		 rear = -1 ; // nothing there yet, you could set it to zero but it can 
+		 maxSize=s;
+		 queueArray=new long[maxSize];
+		 front=0;
+		 rear = -1 ;
 		 nItems = 0;
 	 }
 	 public void insert(long j) {
@@ -36,9 +33,7 @@ public class Queue {
 			front = 0;
 		 }
 
-		 String result = rear == maxSize - 1 ? "Queue full " : addItem(j); 
-	
-		//same as if(rear==maxSize-1) yadi yadi yada
+		 String result = rear == maxSize - 1 ? "Queue full " : addItem(j);
 	
 		 System.out.println(result);
 
@@ -67,10 +62,6 @@ public class Queue {
 	 public String removeItem(){
 
 		 long removedItem = queueArray[front++];
-	
-		 //queueArray[--front]=-1;
-	
-		 // all in one go: All hail the power of post incrementor! mwaahaaaha!
 	
 		 nItems--;
 	
