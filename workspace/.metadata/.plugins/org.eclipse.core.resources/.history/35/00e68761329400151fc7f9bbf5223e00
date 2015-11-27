@@ -1,0 +1,46 @@
+package linkedList;
+
+public class LinkedList_intSort {
+	private IntLink first = null;
+	private int linkNum = 0;
+	public void SortList(IntLink first)
+	{
+		int tempVal = 0;
+
+		int currentPos=1;
+		IntLink currentLink = first;
+
+		for (currentPos=1;currentPos<linkNum;++currentPos){
+
+			while(currentPos> 0 && currentLink.getValue()<currentLink.getPrevLink().getValue()){
+
+				tempVal = currentLink.getValue();
+
+				currentLink.setValue(currentLink.getPrevLink().getValue());
+
+				currentLink.getPrevLink().setValue(tempVal);
+
+				--currentPos;//pre-decrement
+
+			}
+
+		}
+	}
+	public void addInt(int val)
+	{
+		IntLink link = new IntLink(val);
+		 if(first!=null) {
+			 link.setNextLink(first);
+			 first = link;// new object is placed at the start
+	
+		 }
+	
+		 else{
+	
+			 first=link;
+	
+		 }
+		 linkNum++;
+	}
+
+}

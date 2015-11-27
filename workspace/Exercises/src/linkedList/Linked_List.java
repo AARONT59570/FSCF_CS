@@ -2,7 +2,7 @@ package linkedList;
 
 public class Linked_List {
 
-	 private Link first;
+	 protected Link first;
 	 private int links = 0;
 
 	 public Linked_List(){ 
@@ -97,7 +97,7 @@ public class Linked_List {
 		Link link = new Link(Name,age,favBand,inARelationship);
 	
 		 if(links==0) {
-			 first = link;// new object is placed at the start
+			 first = link;
 			 links++;
 			 return link;
 		}

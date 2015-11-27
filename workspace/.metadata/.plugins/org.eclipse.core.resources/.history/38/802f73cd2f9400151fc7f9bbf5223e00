@@ -1,0 +1,19 @@
+package linkedList;
+
+public class IntLink {
+	private IntLink nextLink=null;
+	 public IntLink getNextLink() 
+	 {
+
+		 return nextLink;
+
+	 }
+
+	 public void setNextLink(IntLink nextLink) 
+	 {
+
+		 this.nextLink = nextLink;
+
+	 }
+
+}

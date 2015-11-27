@@ -1,0 +1,27 @@
+package linkedList;
+
+public class LinkedList_intSort {
+	private IntLink first = null;
+	private int linkNum = 0;
+	public void SortList(IntLink first)
+	{
+		
+	}
+	public void addInt(int val)
+	{
+		IntLink link = new IntLink(val);
+		 if(first!=null) {
+			 link.setNextLink(first);
+			 first = link;// new object is placed at the start
+	
+		 }
+	
+		 else{
+	
+			 first=link;
+	
+		 }
+		 linkNum++;
+	}
+
+}
