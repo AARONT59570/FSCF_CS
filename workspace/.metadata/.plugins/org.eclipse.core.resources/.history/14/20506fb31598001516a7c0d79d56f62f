@@ -1,0 +1,20 @@
+package databases;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+
+public class DBEdit {
+	String csvFile = "/Users/CompUser/Documents/records.csv";
+	BufferedReader br = null;
+	String line = "";
+	String cvsSplitBy = ",";
+	br = new BufferedReader(new FileReader(csvFile));
+	while ((line = br.readLine()) != null) {
+
+	        // use comma as separator
+		String[] record = line.split(cvsSplitBy);
+	}
+
+}

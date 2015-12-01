@@ -1,0 +1,37 @@
+package linkedList;
+
+public class LinkedList_ShoppingCart {
+	private ItemLink first = null;
+	private float total;
+	public void addItem(float price, int qty, String desc)
+	{
+		ItemLink item = new ItemLink(price, qty, desc);
+		if (first == null)
+			first = item;
+		else
+		{
+			item.setNextLink(first);
+			first = item;
+		}
+			
+	}
+	public void displayItems()
+	{
+		ItemLink currentItem = first;
+		while(currentItem.getNextLink() != null)
+		{
+			currentItem.displayItem();
+			currentItem = currentItem.getNextLink();
+		}
+	}
+	public void getTotal()
+	{
+		ItemLink currentItem = first;
+		while(currentItem.getNextLink() != null)
+		{
+			total += currentItem.getSubTotal();
+			currentItem = currentItem.getNextLink();
+		}
+	}
+
+}

@@ -1,0 +1,14 @@
+package linkedList;
+
+public class LinkedList_ShoppingCart_Controller {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LinkedList_ShoppingCart cart = new LinkedList_ShoppingCart();
+		cart.addItem(2.50f, 5, "Haribo");
+		cart.addItem(15.00f, 2, "Wine");
+		cart.addItem(0.50f, 10, "Crips");
+		cart.addItem(1.99f, 3, "Coke");
+	}
+
+}

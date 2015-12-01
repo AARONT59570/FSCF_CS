@@ -1,0 +1,9 @@
+package databases;
+
+public class Record {
+	private String name;
+	private String dob;
+	private String postcode;
+	private long telephone;
+
+}

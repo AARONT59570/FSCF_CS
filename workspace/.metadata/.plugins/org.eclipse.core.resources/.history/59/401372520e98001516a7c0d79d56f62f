@@ -1,0 +1,47 @@
+package linkedList;
+
+public class SCLink {
+	private SCLink nextLink=null;
+	private SCLink prevLink=null;
+	private 
+	
+	 public SCLink getNextLink() 
+	 {
+
+		 return nextLink;
+
+	 }
+
+	 public void setNextLink(SCLink nextLink) 
+	 {
+
+		 this.nextLink = nextLink;
+		 nextLink.setPrevLink(this);
+
+	 }
+	 public SCLink getPrevLink() 
+	 {
+
+		 return prevLink;
+
+	 }
+
+	 public void setPrevLink(SCLink prev) 
+	 {
+
+		 this.prevLink = prev;
+
+	 }
+	 public SCLink(int val)
+	 {
+		 this.value = val;
+	 }
+	 public int getValue()
+	 {
+		 return this.value;
+	 }
+	 public void setValue(int val)
+	 {
+		 this.value = val;
+	 }
+}
