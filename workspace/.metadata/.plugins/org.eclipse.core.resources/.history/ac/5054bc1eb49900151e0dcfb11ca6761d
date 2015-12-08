@@ -1,0 +1,10 @@
+package arrayLists;
+
+public class ALController {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

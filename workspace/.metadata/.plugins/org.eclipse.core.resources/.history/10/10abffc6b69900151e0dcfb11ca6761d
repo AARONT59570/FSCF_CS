@@ -1,0 +1,26 @@
+package databases;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+
+public class DBEdit {
+	public void init() {
+		String csvFilePath = "c:\\Users\\CompUser\\Documents\\records.csv";
+		try {
+			File csvFile = new File(csvFilePath);
+			if(csvFile.createNewFile())
+			{
+				System.out.println("New CSV File Created");
+			}
+		} catch (IOException e)
+		{
+			e.printStackTrace();
+		}
+	}
+	
+}

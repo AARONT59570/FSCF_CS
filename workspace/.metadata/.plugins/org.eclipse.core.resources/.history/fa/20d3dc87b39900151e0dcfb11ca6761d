@@ -1,0 +1,15 @@
+package arrayLists;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class ALMethods {
+	public void switchPairs(ArrayList list)
+	{
+		int currentIndex = 0;
+		int passes = (int) list.size() / 2;
+		for (int i = 0; i < passes; i += 2) {
+			
+		}
+	}
+}
